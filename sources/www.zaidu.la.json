@@ -1,0 +1,27 @@
+{
+    "name": "再读中文网",
+    "url": "www.zaidu.la",
+    "version": 100,
+    "search": {
+        "url": "https://www.zaidu.la/searchbook.php?keyword=${key}",
+        "charset": "utf-8",
+        "list": "div#main > table > tr",
+        "name": "td.odd:first-child",
+        "author": "td.odd:nth-child(2)",
+        "detail": "td.odd:first-child a"
+    },
+    "detail": {
+        "name": "div#info > h1",
+        "author": "div#info p:first-child",
+        "cover": "div#fmimg > img",
+        "update": "div#info p:last-child"
+    },
+    "catalog": {
+        "list": "div#qw",
+        "name": "dd > a",
+        "chapter": "dd > a"
+    },
+    "chapter": {
+        "content": "div#txt"
+    }
+}
